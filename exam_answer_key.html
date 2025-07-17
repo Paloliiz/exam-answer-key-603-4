@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เฉลยข้อสอบกลางภาค: การแปลภาษาอังกฤษ 603-4</title>
+    <style>
+        body {
+            font-family: 'Sukhumvit Set', 'Kanit', Arial, sans-serif; /* Fallback fonts for Thai and English */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        @font-face {
+            font-family: 'Sukhumvit Set';
+            src: url('https://fonts.gstatic.com/s/notosansthai/v16/s6js_XYBy_9YgOb0KtJpEZpY30S-pE1G.woff2') format('woff2'); /* Example, consider self-hosting for best reliability */
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Kanit';
+            src: url('https://fonts.gstatic.com/s/kanit/v12/nKKZ-WnOQkDNADt_fh_x.woff2') format('woff2'); /* Example, consider self-hosting for best reliability */
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .presentation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .slide {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 960px; /* Standard presentation width */
+            margin: 20px auto;
+            padding: 40px 60px;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .slide.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .slide h1, .slide h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        .slide h1 {
+            font-size: 2.8em;
+        }
+        .slide h2 {
+            font-size: 2.2em;
+        }
+        .slide h3 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        .slide p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .slide ul {
+            list-style: disc;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+        .slide ol {
+            list-style: decimal;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+        .slide li {
+            margin-bottom: 8px;
+        }
+        .slide .question {
+            font-weight: bold;
+            color: #e74c3c; /* Red for question */
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        .slide .correct-answer {
+            font-weight: bold;
+            color: #27ae60; /* Green for correct answer */
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .slide .explanation {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+        .slide .explanation strong {
+            color: #3498db;
+        }
+        .slide .note {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            font-size: 0.9em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+        .navigation-buttons button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navigation-buttons button:hover {
+            background-color: #2980b9;
+        }
+        .navigation-buttons button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+        .slide-indicator {
+            font-size: 1.1em;
+            color: #34495e;
+            margin: 0 10px;
+            background-color: #ecf0f1;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+        <div class="slide" id="slide-1">
+            <h1>การแปลภาษาอังกฤษ 603-4: เฉลยข้อสอบกลางภาค</h1>
+            <p style="text-align: center;">(English Translation 603-4: Midterm Exam Answer Key)</p>
+            <h2 style="margin-top: 50px;">โรงเรียนเขาฉกรรจ์วิทยาคม</h2>
+            <h2 style="margin-top: 10px;">ชั้นมัธยมศึกษาปีที่ 6</h2>
+            <p style="text-align: center; margin-top: 60px;"><strong>ครู:</strong> [ใส่ชื่อคุณครูที่นี่]</p>
+            <p style="text-align: center;"><strong>วันที่:</strong> กรกฎาคม 2568</p>
+        </div>
+
+        <div class="slide" id="slide-2">
+            <h2>คำชี้แจง</h2>
+            <ul>
+                <li>ข้อสอบชุดนี้มีทั้งหมด 37 ข้อ</li>
+                <li>ข้อสอบปรนัย (เลือกตอบ) จำนวน 34 ข้อ</li>
+                <li>ข้อสอบอัตนัย (เขียนตอบ) จำนวน 3 ข้อ</li>
+                <li>คะแนนเต็ม 20 คะแนน</li>
+            </ul>
+        </div>
+
+        <div class="slide" id="slide-3">
+            <h2>ข้อที่ 1: การแปลคืออะไร?</h2>
+            <p class="question">1. การแปล คือ</p>
+            <ul>
+                <li>A. การแปลคำต่อคำจากภาษาหนึ่งไปอีกภาษาหนึ่ง</li>
+                <li>B. การถ่ายทอดความหมายจากภาษาหนึ่งไปสู่อีกภาษาหนึ่งโดยรักษาความหมายเดิม</li>
+                <li>C. การเปลี่ยนคำศัพท์จากภาษาต่างประเทศเป็นภาษาไทย</li>
+                <li>D. การอ่านข้อความภาษาอังกฤษออกเสียงเป็นภาษาไทย</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ตามเนื้อหาที่เรียนมา การแปลคือ "การถ่ายทอดความหมายจากภาษาหนึ่งไปสู่อีกภาษาหนึ่ง โดยต้องรักษาความหมายเดิมให้ครบถ้วนและถูกต้อง"</p>
+                <p>การแปลไม่ใช่แค่การแปลคำต่อคำเท่านั้น แต่ต้องคำนึงถึงความหมายและความรู้สึกด้วย</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-4">
+            <h2>ข้อที่ 2: หลักการแปลที่สำคัญ</h2>
+            <p class="question">2. หลักการแปลที่สำคัญ ได้แก่</p>
+            <ul>
+                <li>A. ความถูกต้อง ความชัดเจน ความเป็นธรรมชาติ</li>
+                <li>B. ความเร็ว ความสั้น ความง่าย</li>
+                <li>C. ความยาว ความซับซ้อน ความเป็นทางการ</li>
+                <li>D. ความสวยงาม ความคล้องจอง ความมีอารมณ์</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: A</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>หลักการแปลเบื้องต้นที่สำคัญประกอบด้วย 3 ส่วนคือ:</p>
+                <ul>
+                    <li><strong>ความถูกต้อง (Accuracy):</strong> แปลให้ได้ความหมายตรงกับต้นฉบับ</li>
+                    <li><strong>ความชัดเจน (Clarity):</strong> แปลให้ผู้อ่านเข้าใจง่าย ไม่กำกวม</li>
+                    <li><strong>ความเป็นธรรมชาติ (Naturalness):</strong> แปลให้อ่านแล้วเป็นธรรมชาติในภาษาเป้าหมาย</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-5">
+            <h2>ข้อที่ 3: ขั้นตอนแรกในการแปล</h2>
+            <p class="question">3. ขั้นตอนแรกในการแปล คือ</p>
+            <ul>
+                <li>A. ถ่ายทอดความหมายเป็นภาษาเป้าหมาย</li>
+                <li>B. อ่านและทำความเข้าใจต้นฉบับให้ชัดเจน</li>
+                <li>C. ตรวจสอบความถูกต้อง</li>
+                <li>D. วิเคราะห์โครงสร้างประโยค</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ตามขั้นตอนการแปลเบื้องต้น ขั้นตอนแรกคือ "อ่านและทำความเข้าใจต้นฉบับให้ชัดเจน"</p>
+                <p>หลังจากนั้นจึงจะมีการวิเคราะห์โครงสร้าง, ถ่ายทอดความหมาย, และตรวจสอบความถูกต้อง</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-6">
+            <h2>ข้อที่ 4: โครงสร้างประโยคภาษาอังกฤษ</h2>
+            <p class="question">4. โครงสร้างพื้นฐานของประโยคภาษาอังกฤษ คือ</p>
+            <ul>
+                <li>A. Verb + Subject + Object</li>
+                <li>B. Object + Subject + Verb</li>
+                <li>C. Subject + Verb + Object</li>
+                <li>D. Subject + Object + Verb</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>โครงสร้างพื้นฐานของประโยคในภาษาอังกฤษคือ Subject (S) + Verb (V) + Object (O)</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-7">
+            <h2>ข้อที่ 5: โครงสร้างประโยค "I love Thailand"</h2>
+            <p class="question">5. ประโยค "I love Thailand" มีโครงสร้างเป็น</p>
+            <ul>
+                <li>A. S+V+Q</li>
+                <li>B. V+S+O</li>
+                <li>C. S+V+O</li>
+                <li>D. S+O+V</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>จากตัวอย่างที่ให้มา "I love Thailand" มีโครงสร้างเป็น "ฉัน (Subject) รัก (Verb) ประเทศไทย (Object)" ซึ่งตรงกับ S+V+O</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-8">
+            <h2>ข้อที่ 6: ตำแหน่งคำคุณศัพท์</h2>
+            <p class="question">6. ความแตกต่างหลักของการวางตำแหน่งคำคุณศัพท์ระหว่างภาษาอังกฤษและภาษาไทยคือ</p>
+            <ul>
+                <li>A. ภาษาอังกฤษวางก่อนคำนาม ภาษาไทยวางหลังคำนาม</li>
+                <li>B. ภาษาอังกฤษวางหลังคำนาม ภาษาไทยวางก่อนคำนาม</li>
+                <li>C. ทั้งสองภาษาวางในตำแหน่งเดียวกัน</li>
+                <li>D. ขึ้นอยู่กับความยาวของคำคุณศัพท์</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: A</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <ul>
+                    <li>ภาษาอังกฤษวางคำคุณศัพท์ก่อนคำนาม (เช่น "A beautiful flower")</li>
+                    <li>ภาษาไทยวางคำคุณศัพท์หลังคำนาม (เช่น "ดอกไม้สวย")</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-9">
+            <h2>ข้อที่ 7: คำแปล "a beautiful flower"</h2>
+            <p class="question">7. คำแปลที่ถูกต้องของ "a beautiful flower" คือ</p>
+            <ul>
+                <li>A. สวยดอกไม้</li>
+                <li>B. ดอกไม้สวย</li>
+                <li>C. ดอกไม้ที่สวย</li>
+                <li>D. ความสวยงามของดอกไม้</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>เนื่องจากในภาษาไทย คำคุณศัพท์จะวางอยู่หลังคำนาม จึงแปล "beautiful flower" เป็น "ดอกไม้สวย"</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-10">
+            <h2>ข้อที่ 8: การแสดงกาลในภาษาไทย</h2>
+            <p class="question">8. ภาษาไทยแสดงกาลด้วย</p>
+            <ul>
+                <li>A. การเปลี่ยนรูปคำกริยา</li>
+                <li>B. คำช่วย</li>
+                <li>C. การเพิ่มหน่วยคำ</li>
+                <li>D. การเปลี่ยนเสียง</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ภาษาไทยแสดงกาลด้วยคำช่วย ไม่มีการเปลี่ยนรูปคำกริยาเหมือนภาษาอังกฤษ. เช่น ใช้ "กำลัง" สำหรับปัจจุบันต่อเนื่อง, "จะ" สำหรับอนาคต, "แล้ว" หรือคำบ่งเวลาในอดีต.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-11">
+            <h2>ข้อที่ 9: กาลของประโยค "I went to school yesterday"</h2>
+            <p class="question">9. ประโยค "I went to school yesterday" อยู่ในกาลใด</p>
+            <ul>
+                <li>A. Present Simple</li>
+                <li>B. Present Perfect</li>
+                <li>C. Past Simple</li>
+                <li>D. Past Continuous</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำกริยา "went" เป็นช่อง 2 ของ "go" และมีคำว่า "yesterday" (เมื่อวาน) ซึ่งเป็นคำบ่งบอกเวลาในอดีตที่ชัดเจน บ่งชี้ว่าเป็น Past Simple Tense.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-12">
+            <h2>ข้อที่ 10: คำแปล "two books"</h2>
+            <p class="question">10. คำแปลที่ถูกต้องของ "two books" คือ</p>
+            <ul>
+                <li>A. หนังสือสอง</li>
+                <li>B. สองหนังสือ</li>
+                <li>C. หนังสือสองเล่ม</li>
+                <li>D. สองเล่มหนังสือ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ในภาษาไทย เมื่อเป็นคำนามพหูพจน์ จะใช้คำบ่งจำนวนตามด้วยลักษณนาม (classification noun) เช่น "หนังสือสองเล่ม" โดยไม่มีการเปลี่ยนรูปคำนาม "หนังสือ".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-13">
+            <h2>ข้อที่ 11: คำแปล "you"</h2>
+            <p class="question">11. คำสรรพนาม "you" ในภาษาไทยอาจแปลว่า</p>
+            <ul>
+                <li>A. ฉัน หรือ กู</li>
+                <li>B. เขา หรือ เธอ</li>
+                <li>C. คุณ หรือ เธอ</li>
+                <li>D. พวกเรา หรือ พวกเขา</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำสรรพนาม "you" ในภาษาอังกฤษ สามารถแปลเป็น "คุณ" หรือ "เธอ" ในภาษาไทยได้ ขึ้นอยู่กับบริบทและความสัมพันธ์ของผู้พูด.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-14">
+            <h2>ข้อที่ 12: คำแปล "my book"</h2>
+            <p class="question">12. "my book" แปลว่า</p>
+            <ul>
+                <li>A. ฉันหนังสือ</li>
+                <li>B. หนังสือฉัน</li>
+                <li>C. หนังสือของฉัน</li>
+                <li>D. หนังสือกับฉัน</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำสรรพนามแสดงความเป็นเจ้าของในภาษาอังกฤษ (possessive pronouns) มักแปลโดยใช้ "ของ" ในภาษาไทย เช่น "my book" แปลว่า "หนังสือของฉัน".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-15">
+            <h2>ข้อที่ 13: คำแปล "the small red book"</h2>
+            <p class="question">13. คำแปลที่ถูกต้องของ "the small red book" คือ</p>
+            <ul>
+                <li>A. หนังสือแดงเล็ก</li>
+                <li>B. หนังสือเล็กแดง</li>
+                <li>C. หนังสือเล่มเล็กสีแดง</li>
+                <li>D. เล็กหนังสือสีแดง</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>วลีที่มีคำคุณศัพท์หลายคำในภาษาไทยจะวางคำคุณศัพท์และลักษณนามหลังคำนาม เช่น "หนังสือเล่มเล็กสีแดง".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-16">
+            <h2>ข้อที่ 14: กาลของประโยค "She is cooking dinner"</h2>
+            <p class="question">14. ประโยค "She is cooking dinner" อยู่ในกาลใด</p>
+            <ul>
+                <li>A. Present Simple</li>
+                <li>B. Present Continuous</li>
+                <li>C. Present Perfect</li>
+                <li>D. Future Simple</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>โครงสร้าง "Subject + is/am/are + V-ing" คือ Present Continuous Tense ซึ่งแสดงเหตุการณ์ที่กำลังเกิดขึ้น.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-17">
+            <h2>ข้อที่ 15: คำแปล "I am studying English"</h2>
+            <p class="question">15. คำแปลที่ถูกต้องของ "I am studying English" คือ</p>
+            <ul>
+                <li>A. ฉันเรียนภาษาอังกฤษ</li>
+                <li>B. ฉันกำลังเรียนภาษาอังกฤษ</li>
+                <li>C. ฉันเรียนภาษาอังกฤษแล้ว</li>
+                <li>D. ฉันจะเรียนภาษาอังกฤษ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Present Continuous Tense ในภาษาอังกฤษ แปลโดยการเพิ่มคำว่า "กำลัง" หน้าคำกริยาในภาษาไทย.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-18">
+            <h2>ข้อที่ 16: Past Perfect Tense ในภาษาไทย</h2>
+            <p class="question">16. Past Perfect Tense ในภาษาไทยมักใช้คำว่า</p>
+            <ul>
+                <li>A. กำลัง</li>
+                <li>B. จะ</li>
+                <li>C. ได้....แล้ว</li>
+                <li>D. อาจจะ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Past Perfect Tense ในภาษาไทยมักแปลโดยเพิ่มคำว่า "ได้....แล้ว" หรือ "...แล้ว" พร้อมคำบ่งเวลาในอดีต.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-19">
+            <h2>ข้อที่ 17: คำแปล "I will go to Japan next year"</h2>
+            <p class="question">17. "I will go to Japan next year" แปลว่า</p>
+            <ul>
+                <li>A. ฉันไปญี่ปุ่นปีหน้า</li>
+                <li>B. ฉันกำลังไปญี่ปุ่นปีหน้า</li>
+                <li>C. ฉันจะไปญี่ปุ่นปีหน้า</li>
+                <li>D. ฉันไปญี่ปุ่นแล้วปีหน้า</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Future Simple Tense ใช้ "will" และแปลโดยเพิ่มคำว่า "จะ" หน้าคำกริยาในภาษาไทย.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-20">
+            <h2>ข้อที่ 18: Modal verb "can"</h2>
+            <p class="question">18. Modal verb "can" แปลว่า</p>
+            <ul>
+                <li>A. ต้อง</li>
+                <li>B. ควรจะ</li>
+                <li>C. อาจจะ</li>
+                <li>D. สามารถ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: D</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Modal verb "can" และ "could" แปลว่า "สามารถ" หรือ "ได้".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-21">
+            <h2>ข้อที่ 19: คำแปล "You should see a doctor"</h2>
+            <p class="question">19. "You should see a doctor" แปลว่า</p>
+            <ul>
+                <li>A. คุณต้องไปพบแพทย์</li>
+                <li>B. คุณควรไปพบแพทย์</li>
+                <li>C. คุณสามารถไปพบแพทย์</li>
+                <li>D. คุณอาจไปพบแพทย์</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Modal verb "should" หรือ "ought to" แปลว่า "ควรจะ".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-22">
+            <h2>ข้อที่ 20: Modal verb "might"</h2>
+            <p class="question">20. ประโยค "It might rain tomorrow" ใช้ Modal verb แสดง</p>
+            <ul>
+                <li>A. ความสามารถ</li>
+                <li>B. ความจำเป็น</li>
+                <li>C. ความเป็นไปได้</li>
+                <li>D. คำแนะนำ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Modal verb "may" หรือ "might" แปลว่า "อาจจะ" ซึ่งแสดงถึงความเป็นไปได้.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-23">
+            <h2>ข้อที่ 21: คำแปล "five tall buildings"</h2>
+            <p class="question">21. "five tall buildings" แปลว่า</p>
+            <ul>
+                <li>A. ตึกสูงห้าหลัง</li>
+                <li>B. ห้าตึกสูง</li>
+                <li>C. ตึกห้าหลังสูง</li>
+                <li>D. อาคารสูงห้าหลัง</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: D</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำคุณศัพท์ "tall" (สูง) วางหลังคำนาม "อาคาร" และคำบอกจำนวน "ห้า" พร้อมลักษณนาม "หลัง" วางท้ายสุด. "อาคาร" เป็นคำที่เหมาะสมกว่า "ตึก" ในบริบททั่วไป. (เทียบเคียงจากตัวอย่างในเนื้อหาหลักการแปลคำนาม/คำคุณศัพท์)</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-24">
+            <h2>ข้อที่ 22: Present Perfect Tense ในภาษาไทย</h2>
+            <p class="question">22. Present Perfect Tense มักใช้คำใดในภาษาไทย</p>
+            <ul>
+                <li>A. กำลัง</li>
+                <li>B. แล้ว หรือ มาแล้ว</li>
+                <li>C. จะ</li>
+                <li>D. ได้</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Present Perfect Tense ในภาษาไทยมักแปลโดยเพิ่มคำว่า "แล้ว" หลังคำกริยา หรือ "มาแล้ว" กับระยะเวลา.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-25">
+            <h2>ข้อที่ 23: กาลของประโยค "He was watching TV when I called"</h2>
+            <p class="question">23. "He was watching TV when I called" อยู่ในกาลใด</p>
+            <ul>
+                <li>A. Past Simple</li>
+                <li>B. Past Continuous</li>
+                <li>C. Past Perfect</li>
+                <li>D. Present Continuous</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>โครงสร้าง "Subject + was/were + V-ing" คือ Past Continuous Tense ซึ่งแสดงเหตุการณ์ที่กำลังดำเนินอยู่ในอดีต.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-26">
+            <h2>ข้อที่ 24: คำแปล "those old books"</h2>
+            <p class="question">24. คำแปลที่ถูกต้องของ "those old books" คือ</p>
+            <ul>
+                <li>A. หนังสือเก่าเหล่านั้น</li>
+                <li>B. เหล่านั้นหนังสือเก่า</li>
+                <li>C. หนังสือเหล่านั้นเก่า</li>
+                <li>D. เก่าหนังสือเหล่านั้น</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: A</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำคุณศัพท์ "old" (เก่า) วางหลังคำนาม "books" (หนังสือ) และคำชี้เฉพาะ "those" (เหล่านั้น) วางท้ายสุดในภาษาไทย.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-27">
+            <h2>ข้อที่ 25: คำแปล "Students must wear uniform"</h2>
+            <p class="question">25. "Students must wear uniform" แปลว่า</p>
+            <ul>
+                <li>A. นักเรียนควรใส่เครื่องแบบ</li>
+                <li>B. นักเรียนสามารถใส่เครื่องแบบ</li>
+                <li>C. นักเรียนต้องใส่เครื่องแบบ</li>
+                <li>D. นักเรียนอาจใส่เครื่องแบบ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Modal verb "must" หรือ "have to" แปลว่า "ต้อง" ซึ่งแสดงถึงความจำเป็น.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-28">
+            <h2>ข้อที่ 26: Future Continuous Tense ในภาษาไทย</h2>
+            <p class="question">26. Future Continuous Tense ในภาษาไทยใช้คำว่า</p>
+            <ul>
+                <li>A. จะ</li>
+                <li>B. จะกำลัง</li>
+                <li>C. กำลังจะ</li>
+                <li>D. จะได้</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>Future Continuous Tense แปลโดยการเพิ่มคำว่า "จะกำลัง" หน้าคำกริยาในภาษาไทย.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-29">
+            <h2>ข้อที่ 27: ความหมายของ Accuracy</h2>
+            <p class="question">27. ความหมายของ Accuracy ในหลักการแปลคือ</p>
+            <ul>
+                <li>A. ความชัดเจน</li>
+                <li>B. ความถูกต้อง</li>
+                <li>C. ความเป็นธรรมชาติ</li>
+                <li>D. ความสวยงาม</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>"Accuracy" ในหลักการแปล หมายถึง "ความถูกต้อง" ซึ่งคือการแปลให้ได้ความหมายตรงกับต้นฉบับ.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-30">
+            <h2>ข้อที่ 28: คำแปล "a cup of hot coffee"</h2>
+            <p class="question">28. "a cup of hot coffee" แปลว่า</p>
+            <ul>
+                <li>A. ถ้วยกาแฟร้อน</li>
+                <li>B. กาแฟร้อนหนึ่งถ้วย</li>
+                <li>C. กาแฟร้อนในถ้วย</li>
+                <li>D. ถ้วยหนึ่งกาแฟร้อน</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>คำคุณศัพท์ "hot" (ร้อน) วางหลังคำนาม "coffee" (กาแฟ) และ "a cup of" (หนึ่งถ้วย) เป็นปริมาณและลักษณนามที่วางหลังสุด.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-31">
+            <h2>ข้อที่ 29: ลักษณะคำบุพบทในภาษาไทย</h2>
+            <p class="question">29. คำบุพบทในภาษาไทยมีลักษณะ</p>
+            <ul>
+                <li>A. มากกว่าภาษาอังกฤษและความหมายแคบกว่า</li>
+                <li>B. น้อยกว่าภาษาอังกฤษและความหมายกว้างกว่า</li>
+                <li>C. เท่ากับภาษาอังกฤษ</li>
+                <li>D. มากกว่าภาษาอังกฤษและความหมายกว้างกว่า</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ภาษาไทยมีคำบุพบทน้อยกว่าภาษาอังกฤษและมีความหมายกว้างกว่า.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-32">
+            <h2>ข้อที่ 30: คำแปล "the most expensive car"</h2>
+            <p class="question">30. "the most expensive car" แปลว่า</p>
+            <ul>
+                <li>A. รถที่แพงที่สุด</li>
+                <li>B. รถแพงมากที่สุด</li>
+                <li>C. รถแพงที่สุดมาก</li>
+                <li>D. แพงที่สุดรถ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: A</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>การแปลคำคุณศัพท์ขั้นสูงสุด "the most expensive" (แพงที่สุด) จะวาง "ที่สุด" ไว้หลังคำคุณศัพท์ในภาษาไทย.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-33">
+            <h2>ข้อที่ 31: กาลของประโยค "They have lived here for 10 years"</h2>
+            <p class="question">31. ประโยค "They have lived here for 10 years" อยู่ในกาล</p>
+            <ul>
+                <li>A. Present Simple</li>
+                <li>B. Present Perfect</li>
+                <li>C. Past Simple</li>
+                <li>D. Past Perfect</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>โครงสร้าง "Subject + have/has + V3" และการใช้ "for + ระยะเวลา" บ่งชี้ว่าเป็น Present Perfect Tense ซึ่งแสดงถึงเหตุการณ์ที่เกิดขึ้นในอดีตและดำเนินต่อเนื่องมาจนถึงปัจจุบัน.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-34">
+            <h2>ข้อที่ 32: กาลของประโยค "We will have completed the project by June"</h2>
+            <p class="question">32. "We will have completed the project by June" อยู่ในกาล</p>
+            <ul>
+                <li>A. Future Simple</li>
+                <li>B. Future Continuous</li>
+                <li>C. Future Perfect</li>
+                <li>D. Present Perfect</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: C</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>โครงสร้าง "Subject + will have + V3" และการใช้ "by + เวลาในอนาคต" บ่งชี้ว่าเป็น Future Perfect Tense ซึ่งแสดงถึงเหตุการณ์ที่จะเสร็จสมบูรณ์ภายในเวลาที่กำหนดในอนาคต.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-35">
+            <h2>ข้อที่ 33: คำแปล "His house is bigger than mine"</h2>
+            <p class="question">33. การแปล "His house is bigger than mine" ที่ถูกต้องคือ</p>
+            <ul>
+                <li>A. บ้านเขาใหญ่กว่าฉัน</li>
+                <li>B. บ้านของเขาใหญ่กว่าของฉัน</li>
+                <li>C. เขาบ้านใหญ่กว่าบ้านฉัน</li>
+                <li>D. บ้านเขาใหญ่มากกว่าบ้านฉัน</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: B</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>วลี "than mine" หมายถึง "กว่าของฉัน" เพื่อแสดงความเป็นเจ้าของที่ชัดเจน ทำให้การแปลเป็น "บ้านของเขาใหญ่กว่าของฉัน" มีความถูกต้องและเป็นธรรมชาติมากกว่า.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-36">
+            <h2>ข้อที่ 34: ขั้นตอนสุดท้ายในการแปล</h2>
+            <p class="question">34. ขั้นตอนสุดท้ายในการแปลคือ</p>
+            <ul>
+                <li>A. อ่านและทำความเข้าใจต้นฉบับ</li>
+                <li>B. วิเคราะห์โครงสร้าง</li>
+                <li>C. ถ่ายทอดความหมาย</li>
+                <li>D. ตรวจสอบความถูกต้องและปรับแก้ให้เป็นธรรมชาติ</li>
+            </ul>
+            <p class="correct-answer">คำตอบที่ถูกต้อง: D</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ตามขั้นตอนการแปลเบื้องต้น ขั้นตอนสุดท้ายคือ "ตรวจสอบความถูกต้องและปรับแก้ให้เป็นธรรมชาติ".</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-37">
+            <h2>ข้อที่ 35: แปลประโยคพร้อมระบุกาล (อัตนัย)</h2>
+            <p class="question">35. จงแปลประโยคต่อไปนี้เป็นภาษาไทย พร้อมระบุกาลของประโยค (1 คะแนน)</p>
+            <p>"She had finished her homework before her mother came home."</p>
+            <p class="correct-answer"><strong>กาล:</strong> Past Perfect Tense</p>
+            <p class="correct-answer"><strong>คำแปล:</strong> เธอทำการบ้านเสร็จแล้วก่อนที่แม่ของเธอจะกลับมาบ้าน</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <p>ประโยคหลัก "She had finished her homework" อยู่ใน Past Perfect Tense ซึ่งใช้เมื่อเหตุการณ์หนึ่ง (ทำการบ้านเสร็จ) เกิดขึ้นและเสร็จสิ้นไปแล้วก่อนเหตุการณ์อีกเหตุการณ์หนึ่งในอดีต (แม่กลับมาบ้าน).</p>
+                <p>ในภาษาไทย Past Perfect มักใช้คำว่า "ได้...แล้ว" หรือ "...แล้ว" เพื่อแสดงการกระทำที่เสร็จสิ้นไปแล้วในอดีต.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-38">
+            <h2>ข้อที่ 36: แปลวลีพร้อมตำแหน่งคำคุณศัพท์ (อัตนัย)</h2>
+            <p class="question">36. จงแปลวลีต่อไปนี้เป็นภาษาไทย โดยให้ความสำคัญกับตำแหน่งของคำคุณศัพท์ (1 คะแนน)</p>
+            <p>"three beautiful small white flowers"</p>
+            <p class="correct-answer"><strong>คำแปล:</strong> ดอกไม้สีขาวเล็กๆ สวยงามสามดอก (หรือ ดอกไม้สวยงามเล็กๆ สีขาวสามดอก)</p>
+            <div class="explanation">
+                <strong>คำอธิบาย:</strong>
+                <ul>
+                    <li>ในภาษาไทย คำนาม (flowers) จะมาก่อน.</li>
+                    <li>คำคุณศัพท์ (beautiful, small, white) จะตามหลังคำนาม.</li>
+                    <li>เมื่อมีคำคุณศัพท์หลายคำ ตำแหน่งอาจยืดหยุ่นได้บ้าง แต่หลักคือตามหลังนาม และคำบอกจำนวน (three) กับลักษณนาม (ดอก) จะอยู่ท้ายสุด. การเรียงลำดับมักจะเป็น ความคิดเห็น/ความรู้สึก (beautiful) -> ขนาด (small) -> สี (white).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-39">
+            <h2>ข้อที่ 37: เปรียบเทียบการแสดงกาล (อัตนัย)</h2>
+            <p class="question">37. จงเปรียบเทียบความแตกต่างระหว่างการแสดงกาลในภาษาอังกฤษและภาษาไทย โดยยกตัวอย่างประกอบ (1 คะแนน)</p>
+            <p class="correct-answer"><strong>ภาษาอังกฤษ:</strong> แสดงกาลด้วยการเปลี่ยนรูปคำกริยา (Verb Conjugation) เช่น I **go**, He **goes** (Present Simple); I **went** (Past Simple).</p>
+            <p class="correct-answer"><strong>ภาษาไทย:</strong> แสดงกาลด้วยคำช่วย (Auxiliary Verbs/Time Adverbs) โดยไม่มีการเปลี่ยนรูปคำกริยาหลัก เช่น **กำลัง** (Present Continuous), **จะ** (Future Simple), **แล้ว** / **มาแล้ว** (Present Perfect/Past Simple).</p>
+            <div class="explanation">
+                <strong>ตัวอย่าง:</strong>
+                <ul>
+                    <li><strong>ภาษาอังกฤษ:</strong> I <strong>eat</strong> an apple. (Present Simple) / I <strong>ate</strong> an apple yesterday. (Past Simple)</li>
+                    <li><strong>ภาษาไทย:</strong> ฉัน<strong>กิน</strong>แอปเปิล. (Present Simple) / ฉัน<strong>กิน</strong>แอปเปิลเมื่อวาน. (Past Simple - กริยา "กิน" ไม่เปลี่ยนรูป).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-40">
+            <h2>คำถามและข้อเสนอแนะ</h2>
+            <h3>นักเรียนมีคำถามเพิ่มเติมหรือไม่?</h3>
+            <h3>ข้อเสนอแนะสำหรับนักเรียน:</h3>
+            <ul>
+                <li>ทบทวนหลักการแปลพื้นฐานให้เข้าใจอย่างถ่องแท้</li>
+                <li>ฝึกการสังเกตโครงสร้างประโยคและความแตกต่างระหว่างภาษา</li>
+                <li>ฝึกแปลจากภาษาอังกฤษเป็นภาษาไทยอย่างสม่ำเสมอ</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <button id="prevBtn" disabled>ย้อนกลับ</button>
+        <span id="slideIndicator">1 / 40</span>
+        <button id="nextBtn">ถัดไป</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideIndicator = document.getElementById('slideIndicator');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            prevBtn.disabled = (currentSlide === 0);
+            nextBtn.disabled = (currentSlide === slides.length - 1);
+            slideIndicator.textContent = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Enter') {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            } else if (event.key === 'ArrowLeft') {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            }
+        });
+
+        // Initial slide display
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
